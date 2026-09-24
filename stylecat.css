@@ -1,0 +1,27 @@
+.mybox {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    background-color: #a6fff2;
+}
+.mybox a {
+    width: 150px;
+    flex-shrink: 0;
+    display: block;
+    text-align: none;
+    color: #000;
+}
+.mybox a img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+     transition: transform 0.3s ease
+}
+
+.mybox a img:hover{
+    transform: rotate(4deg) ;
+}
