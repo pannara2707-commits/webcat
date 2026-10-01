@@ -1,0 +1,57 @@
+gsap.registerPlugin(ScrollTrigger);
+
+window.addEventListener("load", () => {
+
+  gsap.timeline({
+
+    scrollTrigger: {
+
+      trigger: ".wrapper",
+
+      start: "top top",
+
+      end: "+=100%",
+
+      pin: true,
+
+      scrub: true,
+
+      markers: false
+
+    }
+
+  })
+
+  .to(".image-container img", {
+
+    scale: 2,
+
+    z: 350,
+
+    clipPath: "inset(10%)",
+
+    transformOrigin: "center center",
+
+    ease: "Power1.inOut"
+
+  })
+
+  .to(
+
+    ".section.hero",
+
+    {
+
+      scale: 1.1,
+
+      transformOrigin: "center center",
+
+      ease: "Power1.inOut"
+
+    },
+
+    "<"
+
+  );
+
+});
